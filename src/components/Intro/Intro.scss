@@ -1,0 +1,71 @@
+$solid-blue : #0093d9;
+
+
+.introText {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: $solid-blue;
+
+
+    // &.blue {
+    //     background-color: $solid-blue !important;
+    //     color: #fff;
+
+    // }
+
+    .wrap {
+       
+        .title {
+            width: 517px;
+            max-width: 100%;
+        }
+
+        .desc {
+            width: 40%;
+            margin: auto;
+            padding-left: 400px;
+        }
+
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 2.1875em;
+            font-weight: 300;
+            line-height: 146%;
+        }
+
+        h6 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.095em;
+            margin-top: 40px;
+            font-weight: 300;
+            letter-spacing: .02em;
+            line-height: 154%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .bg {
+        position: absolute;
+        top: 0;
+        right: -100px;
+        width: 350px;
+        height: 350px;
+        transform: rotate(45deg);
+
+        svg {
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {  
+
+    .introText .wrap .desc {
+        width: 100%;
+        padding-left: 0;
+    }
+
+}

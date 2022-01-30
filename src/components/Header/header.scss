@@ -1,0 +1,120 @@
+$solid-blue : #0093d9;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 9;
+    transition: 0.8s;
+    // background: $solid-blue;
+
+    &.white {
+        background-color: #fff ;
+
+        .logo {
+            svg {
+                path {
+                    fill: $solid-blue;
+                }
+            }
+        }
+        
+        ul {
+            li {
+                a {
+                    color: #333 ;
+                }
+            }
+        }
+    }
+
+    &.sticky {
+        background: $solid-blue;
+        z-index: 999;
+
+        &.white {
+            background-color: #fff; 
+             ul {
+                 li {
+                     a {
+                         color: #333;
+                     }
+                 }
+             }
+
+            &.purple {
+                background-color: #4C0027;
+
+                ul {
+                    li {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.purple {
+        background-color: #4C0027; 
+
+        .logo {
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+        
+        ul {
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        svg {
+            width: 150px;
+            fill: $solid-blue;
+        }
+    }
+
+    .navs {
+        ul {
+            display: flex;
+
+            li {
+                margin: 0 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .navs {
+        display: none;
+    }
+
+}

@@ -1,0 +1,45 @@
+.gen-img {
+    // background-color: #4C0027;
+
+
+    .wrap {
+        position: relative;
+    }
+
+    .text {
+        color: #fff;
+        max-width: 450px;
+        position: absolute;
+
+        p {
+            margin-top: 30px;
+        }
+
+    }
+
+    .img {
+        text-align: center;
+        padding: 40px 0;
+        width: 65vw;
+        margin-left: auto;
+
+        img {
+            width: 100%;
+            padding-top: 320px;
+            height: 512px;
+            object-fit: cover;
+        }
+    } 
+} 
+
+
+@media screen and (max-width: 480px) {  
+    .gen-img .text {
+        max-width: 100%;
+    }
+
+    .gen-img .img {
+        width: 100%;
+    }
+
+}

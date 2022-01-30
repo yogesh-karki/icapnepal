@@ -1,0 +1,63 @@
+$solid-blue : #0093d9;
+
+.quiz_banner {
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    figure {
+        img {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+        }
+    }
+
+    .text {
+        position: absolute;
+        right: 10%;
+        top: 40%;
+
+        h3 {
+            max-width: 350px;
+        }
+
+        button {
+           margin-top: 20px;
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 30px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 400;
+            background: linear-gradient(-45deg, $solid-blue ,#68d9d6,#6d86d6);
+            background-size: 500% 300%;
+            animation: gradient 20s ease infinite;
+            transition: 0.8s;
+        }
+    }
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+

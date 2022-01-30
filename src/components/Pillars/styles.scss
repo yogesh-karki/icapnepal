@@ -1,0 +1,112 @@
+$solid-blue : #0093d9;
+
+
+
+.cardBtn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #8500d9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: "Lato", sans-serif;
+    font-size: 0.678em;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: scale(0);
+    z-index: 3;
+    transition: 0.1s;
+}
+
+.pillars {
+    width: 100%;
+    padding: 120px 0;
+    
+    .container {
+        overflow: hidden;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .pcard {
+            width: 21%;
+            height: 522px;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+       
+
+                .logo {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .logo {
+                margin-top: -10px;
+                
+                svg {
+                    transition: 0.8s;
+                    width: 25px;
+                    opacity: 0.5;
+
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            h4 {
+                font-family: "Lato", sans-serif;
+                font-size: 1.9875em;
+                font-weight: 300;
+                line-height: 110%;
+                max-width: 320px;
+            }
+
+       
+
+        }
+    }
+
+    .foot {
+        display: flex;
+
+        span {
+            font-size: 3.2853em;
+            font-weight: 500;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 0.685rem;
+            font-weight: 400;
+            padding-left: 70px;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) { 
+    .pillars .wrap .pcard {
+        width: 100%;
+        margin: 15px 0 ;
+    }
+}
