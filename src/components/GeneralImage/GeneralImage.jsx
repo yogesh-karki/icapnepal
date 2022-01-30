@@ -67,7 +67,7 @@ const GeneralImage = () => {
 
                         <div className="img">
                             <figure>
-                                <img src="./images/roundtable.jpg" alt="" />
+                                <img src="./images/roundtable.JPG" alt="" />
                             </figure>
                         </div>
                     </div>
